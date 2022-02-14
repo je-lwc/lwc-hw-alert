@@ -13,6 +13,7 @@
 
 .heading lightning-icon {
   --sds-c-icon-color-foreground-default: #ee4b2b;
+  font-size: var(--lwc-fontSize5, 1rem);
 }
 
 .heading h1 {
