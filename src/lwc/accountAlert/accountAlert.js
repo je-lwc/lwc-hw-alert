@@ -18,7 +18,10 @@ export default class AccountAlert extends LightningElement {
     getAlerts({ accountId: this._accountId })
       .then((res) => res.sort((a, b) => a.rank - b.rank))
       .then((res) => (this.alerts = res))
-      .finally(() => (this.loading = false));
+      .finally(() => {
+        this.loading = false;
+        console.log('loading false');
+      });
   }
 
   renderedCallback() {
