@@ -11,6 +11,10 @@
   flex-direction: row;
 }
 
+.heading lightning-icon {
+  --sds-c-icon-color-foreground-default: #ee4b2b;
+}
+
 .heading h1 {
   font-size: var(--lwc-fontSize5, 1rem);
   line-height: var(--lwc-lineHeightHeading, 1.25);
