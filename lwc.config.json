@@ -8,11 +8,11 @@
     },
     {
       "name": "lightning/platformShowToastEvent",
-      "path": "src/mocks/showToastEvent.js"
+      "path": "src/mock/showToastEvent.js"
     },
     {
       "name": "@salesforce/apex/AccountAlertController.getAlerts",
-      "path": "src/mocks/getAlerts.js"
+      "path": "src/mock/getAlerts.js"
     }
   ]
 }
