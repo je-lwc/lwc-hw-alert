@@ -2,7 +2,7 @@
   background-color: #ffffff;
   border-radius: 0.25em;
   border: 1px solid var(--lwc-colorBorder, #dddbda);
-  padding: 8px;
+  padding: 8px 12px;
 }
 
 .heading {
