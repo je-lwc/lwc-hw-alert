@@ -42,3 +42,10 @@
 .alert-board > div > span {
   font-weight: 700;
 }
+
+.loading {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  min-height: 300px;
+}

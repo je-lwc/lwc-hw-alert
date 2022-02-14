@@ -14,5 +14,10 @@
         <span>{a.content}</span>
       </div>
     </div>
+
+    <div class="loading" if:true={loading}>
+      <h1>Loading Account Alerts...</h1>
+      <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </div>
   </div>
 </template>
