@@ -12,7 +12,7 @@
     },
     {
       "name": "@salesforce/apex/AccountAlertController.getAlerts",
-      "path": "src/mocks/accountAlertController.js"
+      "path": "src/mocks/getAlerts.js"
     }
   ]
 }
