@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/je-lwc.lwc-hw-alert",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve zXbzJh1b0w5Wz2km5h04 --open"
+  }
+}
