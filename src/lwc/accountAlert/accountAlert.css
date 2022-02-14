@@ -30,10 +30,15 @@
 .alert-board {
   display: flex;
   flex-direction: column;
+  gap: 3px;
 }
 
 .alert-board > div {
   border-radius: 0.25em;
   box-shadow: 0 -2px 2px 0 rgb(0 0 0 / 16%);
   padding: 10px 8px;
+}
+
+.alert-board > div > span {
+  font-weight: 700;
 }
