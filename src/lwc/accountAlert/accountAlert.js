@@ -3,6 +3,9 @@ import getAlerts from '@salesforce/apex/AccountAlertController.getAlerts';
 
 export default class AccountAlert extends LightningElement {
   _accountId;
+  loading = false;
+  alerts = [];
+
   @api
   set recordId(id) {
     this._accountId = id;
@@ -12,16 +15,12 @@ export default class AccountAlert extends LightningElement {
     return this._accountId;
   }
 
-  alerts = [];
   getAlerts() {
     this.loading = true;
     getAlerts({ accountId: this._accountId })
       .then((res) => res.sort((a, b) => a.rank - b.rank))
       .then((res) => (this.alerts = res))
-      .finally(() => {
-        this.loading = false;
-        console.log('loading false');
-      });
+      .finally(() => (this.loading = false));
   }
 
   renderedCallback() {
