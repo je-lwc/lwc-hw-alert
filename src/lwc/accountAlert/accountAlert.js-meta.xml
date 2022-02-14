@@ -9,5 +9,12 @@
     <targets>
         <target>lightning__RecordPage</target>
     </targets>
-
+    <targetConfigs>
+      <targetConfig targets="lightning__RecordPage">
+          <objects>
+              <object>Account</object>
+          </objects>
+          <property name="recordId" type="String" label="Account Id" />
+      </targetConfig>
+  </targetConfigs>
 </LightningComponentBundle>
