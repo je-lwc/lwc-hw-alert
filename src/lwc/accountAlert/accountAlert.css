@@ -35,7 +35,7 @@
 
 .alert-board > div {
   border-radius: 0.25em;
-  box-shadow: 0 -2px 2px 0 rgb(0 0 0 / 16%);
+  box-shadow: 2px 4px 5px 0 #706e6b;
   padding: 10px 8px;
 }
 
