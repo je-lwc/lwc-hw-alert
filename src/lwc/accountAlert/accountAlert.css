@@ -6,6 +6,7 @@
 }
 
 .heading {
+  padding-bottom: 10px;
   border-bottom: 1px solid #000000;
   display: flex;
   flex-direction: row;
@@ -13,7 +14,6 @@
 
 .heading lightning-icon {
   --sds-c-icon-color-foreground-default: #ee4b2b;
-  font-size: var(--lwc-fontSize5, 1rem);
 }
 
 .heading h1 {
