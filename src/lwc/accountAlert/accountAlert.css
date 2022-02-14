@@ -8,3 +8,12 @@
 .heading {
   border-bottom: 1px solid #000000;
 }
+
+.heading h1 {
+  font-size: var(--lwc-fontSize5, 1rem);
+  line-height: var(--lwc-lineHeightHeading, 1.25);
+  font-weight: var(
+    --slds-c-card-heading-font-weight,
+    var(--sds-c-card-heading-font-weight, var(--lwc-cardFontWeight, 700))
+  );
+}
