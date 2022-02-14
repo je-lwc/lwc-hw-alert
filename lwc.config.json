@@ -4,7 +4,15 @@
       "npm": "lightning-base-components"
     },
     {
-      "dir": "src"
+      "dir": "src/lwc"
+    },
+    {
+      "name": "lightning/platformShowToastEvent",
+      "path": "src/mocks/showToastEvent.js"
+    },
+    {
+      "name": "@salesforce/apex/AccountAlertController.getAlerts",
+      "path": "src/mocks/accountAlertController.js"
     }
   ]
 }

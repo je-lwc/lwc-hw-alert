@@ -1,0 +1,12 @@
+<template>
+  <div class="canvas">
+    <div class="heading">
+      <h1>Alerts</h1>
+    </div>
+  </div>
+  <div class="alert-board">
+    <div for:each={alerts} for:item="a" key={a.id} data-color={a.color} data-bg={a.background}>
+      <span>{a.content}</span>
+    </div>
+  </div>
+</template>

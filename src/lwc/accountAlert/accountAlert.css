@@ -1,0 +1,10 @@
+.canvas {
+  background-color: #ffffff;
+  border-radius: 0.25em;
+  border: 1px solid var(--lwc-colorBorder, #dddbda);
+  padding: 8px;
+}
+
+.heading {
+  border-bottom: 1px solid #000000;
+}
