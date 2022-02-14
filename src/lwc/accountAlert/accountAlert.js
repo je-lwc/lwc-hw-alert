@@ -6,17 +6,20 @@ export default class AccountAlert extends LightningElement {
   @api
   set recordId(id) {
     this._accountId = id;
-    this.loading = true;
-    getAlerts({ accountId: this._accountId })
-      .then((res) => res.sort((a, b) => a.rank - b.rank))
-      .then((res) => (this.alerts = res))
-      .finally(() => (this.loading = false));
+    this.getAlerts();
   }
   get recordId() {
     return this._accountId;
   }
 
   alerts = [];
+  getAlerts() {
+    this.loading = true;
+    getAlerts({ accountId: this._accountId })
+      .then((res) => res.sort((a, b) => a.rank - b.rank))
+      .then((res) => (this.alerts = res))
+      .finally(() => (this.loading = false));
+  }
 
   renderedCallback() {
     this.template.querySelectorAll('.alert-board>div').forEach((el) => {
