@@ -15,4 +15,11 @@ export default class AccountAlert extends LightningElement {
   }
 
   alerts = [];
+
+  renderedCallback() {
+    this.template.querySelectorAll('.alert-board>div').forEach((el) => {
+      el.style.color = el.dataset.color;
+      el.style.backgroundColor = el.dataset.bg;
+    });
+  }
 }
